@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GERADOR DE SENHA</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div id="titulo">
+        <header>
+            <h2>GERADOR DE SENHA PADRÃO HMAC SHA256</h2>
+        </header>
+    </div>
+    <div class="formulario">
+        <form action="index.html">
+            <label>CONVÊNIO</label>
+            <input class="input" id="digConvenio" type="text" placeholder="Digite o código do convênio" required minlength="1"
+                maxlength="4"><br><br>
+            <label>SENHA</label>
+            <input class="input" id="digSenha" type="text" placeholder="Digite a senha" required
+                minlength="1" maxlength="10"> <br><br><br>
+            <div id="button">
+                <button id="btnGerar">GERAR</button>
+            </div> 
+        </form>
+    </div>
+    <div id="resultado"></div>
+    
+
+    <script src="./index.js" default></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</body>
+
+</html>
